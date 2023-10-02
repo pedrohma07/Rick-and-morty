@@ -1,4 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-color: #3C3E44;
+  --title-text-color: #fff;
+  --background-dark: #272B33;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto 
 }
 
