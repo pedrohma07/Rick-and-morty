@@ -1,12 +1,12 @@
 .container{
     width: 240px;
-    height: 245px;
     background: #fff;
 
     display: flex;
     flex-direction: column;
     align-items: start;
     border: 1px solid #b8b8b8;
+    margin: 10px;
 }
 .img{
     width: 100%;
