@@ -48,19 +48,24 @@ const Index = () => {
 
   return (
     <div className={style.container}>
-      {characterData.map((character) => (
-        <CardCharacter
-          key={character.id}
-          name={character.name}
-          specie={character.specie}
-          image={character.image}
-          status={character.status}
-          gender={character.gender}
-          location={{ name: character.location.name }}
-          origin={{ name: character.origin.name }}
-        />
-      ))}
-      <button onClick={() => setFilter(filter + 1)}>mais</button>
+      <div className={style.wrapper}>
+        {characterData.map((character) => (
+          <CardCharacter
+            key={character.id}
+            name={character.name}
+            specie={character.specie}
+            image={character.image}
+            status={character.status}
+            gender={character.gender}
+            location={{ name: character.location.name }}
+            origin={{ name: character.origin.name }}
+          />
+        ))} 
+      </div>
+      <div className={style.viewmore} onClick={() => setFilter(filter + 1)}>
+        <img src="/angle-arrow-down_icon-icons.com_73683.svg" alt="" />
+        <p>Ver mais </p>
+      </div>
     </div>
   );
 };
