@@ -3,11 +3,18 @@ import CardCharacter from "../../components/CardCharacter";
 import style from "./style.module.scss";
 
 interface Character {
-  id: number;
-  name: string;
-  species: string;
-  image: string;
-  // Adicione outras propriedades, se necessário.
+  id: number
+  name: string
+  specie: string
+  status: string
+  gender: string
+  image: string
+  location: {
+    name: string
+  }
+  origin: {
+    name: string
+  }
 }
 
 const Index = () => {
@@ -23,7 +30,8 @@ const Index = () => {
           throw new Error("Erro ao buscar dados");
         }
         const data = await response.json();
-
+        console.log(data);
+        
         if (filter !== 1) {
           setCharacterData((prevData) => [...prevData, ...data.results]);
         }else{
@@ -40,15 +48,24 @@ const Index = () => {
 
   return (
     <div className={style.container}>
-      {characterData.map((character) => (
-        <CardCharacter
-          key={character.id}
-          name={character.name}
-          specie={character.species}
-          img={character.image}
-        />
-      ))}
-      <button onClick={() => setFilter(filter + 1)}>mais</button>
+      <div className={style.wrapper}>
+        {characterData.map((character) => (
+          <CardCharacter
+            key={character.id}
+            name={character.name}
+            specie={character.specie}
+            image={character.image}
+            status={character.status}
+            gender={character.gender}
+            location={{ name: character.location.name }}
+            origin={{ name: character.origin.name }}
+          />
+        ))} 
+      </div>
+      <div className={style.viewmore} onClick={() => setFilter(filter + 1)}>
+        <img src="/angle-arrow-down_icon-icons.com_73683.svg" alt="" />
+        <p>Ver mais </p>
+      </div>
     </div>
   );
 };
