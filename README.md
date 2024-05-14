@@ -1,27 +1,68 @@
-# React + TypeScript + Vite
+# Ricky and Morty React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O 'Ricky and Morty React' é um projeto desenvolvido em React para explorar os conceitos de frontend e interagir com a API pública do Rick and Morty. Utiliza SCSS para estilização e Eslint para garantir a qualidade do código. Este projeto simples foi criado com o objetivo principal de aprendizagem.
 
-Currently, two official plugins are available:
+## Índice
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. [Demonstração](#Demonstração)
+2. [Tecnologias Utilizadas](#Tecnologias Utilizadas)
+3. [Instalação](#instalação)
+4. [Como Usar](#Como Usar)
+5. [Contribuição](#contribuição)
+6. [Licença](#licença)
 
-## Expanding the ESLint configuration
+## Demonstração
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Deploy: http://t
 
-- Configure the top-level `parserOptions` property like this:
+- Print:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+<img src="/public/screen-1.png">
+
+
+
+## Tecnologias Utilizadas
+
+As principais tecnologias, frameworks e ferramentas utilizadas no projeto:
+
+- React
+
+- SCSS
+
+- HTML/CSS/JavaScript
+
+- CSS Modules
+
+  
+
+## Instalação
+
+Para instalação do projetos, execute os seguintes comdandos:
+
+```
+git clone https://github.com/pedrohma07/Rick-and-morty-React.git
+cd Rick-and-morty-React
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Como Usar
+
+Para executar execute os seguintes comandos:
+
+```
+npm run dev
+```
+
+## Contribuição
+
+Se você deseja contribuir para o projeto, siga estas etapas: 
+
+1. Faça um fork do projeto. 
+2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`). 
+3. Faça commit de suas alterações (`git commit -am 'Adicionando uma nova feature'`).
+4. Faça push para a branch (`git push origin feature/MinhaFeature`). 
+5. Abra um Pull Request. Após o envio do Pull Request, ele será revisado pelo mantenedor do projeto. Contribuições são bem-vindas! Qualquer ajuda para melhorar este projeto é muito apreciada.
+
+## Licença
+
+Este projeto está licenciado sob os termos da Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
