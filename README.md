@@ -5,9 +5,9 @@ O 'Ricky and Morty React' é um projeto desenvolvido em React para explorar os c
 ## Índice
 
 1. [Demonstração](#Demonstração)
-2. [Tecnologias Utilizadas](#Tecnologias Utilizadas)
+2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 3. [Instalação](#instalação)
-4. [Como Usar](#Como Usar)
+4. [Como Usar](#como-usar)
 5. [Contribuição](#contribuição)
 6. [Licença](#licença)
 
@@ -19,7 +19,7 @@ O 'Ricky and Morty React' é um projeto desenvolvido em React para explorar os c
 
 <img src="/public/screen-1.png">
 
-
+<a name="tecnologias-utilizadas"></a>
 
 ## Tecnologias Utilizadas
 
@@ -44,6 +44,8 @@ git clone https://github.com/pedrohma07/Rick-and-morty-React.git
 cd Rick-and-morty-React
 npm install
 ```
+
+<a name="como-usar"></a>
 
 ## Como Usar
 
