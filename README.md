@@ -13,7 +13,7 @@ O 'Ricky and Morty React' é um projeto desenvolvido em React para explorar os c
 
 ## Demonstração
 
-- Deploy: http://t
+- Deploy: [Clique aqui](https://rickandmorty-phma.netlify.app)
 
 - Print:
 
